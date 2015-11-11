@@ -18,6 +18,11 @@
             return collection;
         }
 
+        public static bool IsNullOrEmpty<T>(this ICollection<T> collection)
+        {
+            return collection == null || collection.Count == 0;
+        }
+
         public static ICollection<T> AddParams<T>(this ICollection<T> collection, params T[] insertees)
         {
             return collection.AddMany(insertees);
