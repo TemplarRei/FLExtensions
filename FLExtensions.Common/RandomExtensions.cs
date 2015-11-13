@@ -1,6 +1,8 @@
 ﻿namespace FLExtensions.Common
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
     public static class RandomExtensions
@@ -28,6 +30,30 @@
         public static decimal NextDecimal(this Random random)
         {
             return (decimal)random.NextDouble();
+        }
+
+        public static DateTime NextDateTime(this Random random, DateTime from, DateTime to)
+        {
+            if (from > to)
+            {
+                throw new ArgumentException("The 'first' argument must be earlier in time than the 'to' argument!");    
+            }
+
+            var range = to - from;
+
+            var randTimeSpan = new TimeSpan((long)(random.NextDouble() * range.Ticks));
+
+            return from + randTimeSpan;
+        }
+
+        public static T NextOf<T>(this Random random, List<T> objects)
+        {
+            return objects[random.Next(objects.Count)];
+        }
+
+        public static T NextOf<T>(this Random random, params T[] objects)
+        {
+            return random.NextOf(objects.ToList());
         }
     }
 }

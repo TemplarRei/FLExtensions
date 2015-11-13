@@ -38,6 +38,10 @@
             person.Homeworks.Add("5");
 
             person.PrintGeneric();
+
+            var lookupString = "pesho";
+
+            Console.WriteLine(lookupString.In("vanya", "Mariya", "Koce", "Boce", "pesho"));
         }
     }
 

@@ -56,7 +56,7 @@
         {
             if (data == null)
             {
-                throw new ArgumentNullException(message);
+                throw new NullReferenceException(message);
             }
 
             return data;
@@ -66,10 +66,25 @@
         {
             if (data == null)
             {
-                throw new ArgumentNullException();
+                throw new NullReferenceException();
             }
 
             return data;
+        }
+
+        public static bool IsIn<T>(this T obj, ICollection<T> objects)
+        {
+            if (null == obj)
+            {
+                throw new ArgumentNullException("obj");
+            }
+
+            return objects.Contains(obj);
+        }
+
+        public static bool IsIn<T>(this T obj, params T[] objects)
+        {
+            return obj.IsIn(objects.ToList());
         }
 
         private static string JoinIEnumerable(IEnumerable enumerable, string separator = " ")
