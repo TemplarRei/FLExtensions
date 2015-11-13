@@ -20,7 +20,7 @@
             return obj;
         }
 
-        public static T PrintGeneric<T>(this T obj, string valueSeparator = ": ", string propSeparator = "; ") where T : class
+        public static string ToStringGeneric<T>(this T obj, string valueSeparator = ": ", string propSeparator = "; ") where T : class
         {
             var sb = new StringBuilder();
 
@@ -48,8 +48,7 @@
             }
 
             sb.AppendLine();
-            Console.WriteLine(sb.ToString());
-            return obj;
+            return sb.ToString();
         }
 
         public static T ThrowIfNull<T>(this T data, string message) where T : class

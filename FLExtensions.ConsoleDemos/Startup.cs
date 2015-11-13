@@ -37,11 +37,11 @@
             person.Homeworks.Add("32");
             person.Homeworks.Add("5");
 
-            person.PrintGeneric();
+            Console.WriteLine(person.PrintGeneric());
 
             var lookupString = "pesho";
 
-            Console.WriteLine(lookupString.In("vanya", "Mariya", "Koce", "Boce", "pesho"));
+            Console.WriteLine(lookupString.IsIn("vanya", "Mariya", "Koce", "Boce", "pesho"));
         }
     }
 
