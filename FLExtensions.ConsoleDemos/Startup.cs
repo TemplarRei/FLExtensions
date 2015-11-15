@@ -26,22 +26,24 @@
 
             //numbers.ForEach(x => x.QuickPow(4).Print());
 
-            var listRange = new List<int>();
+            //var listRange = new List<int>();
 
-            listRange.Range(1, 6, 3);
+            //listRange.Range(1, 6, 3);
 
-            Console.WriteLine(listRange.StringJoin());
+            //Console.WriteLine(listRange.StringJoin());
 
-            var person = new Person("Pesho", "HSRL Rakovski, Bourgas");
-            person.Homeworks.Add("1324123413");
-            person.Homeworks.Add("32");
-            person.Homeworks.Add("5");
+            //var person = new Person("Pesho", "HSRL Rakovski, Bourgas");
+            //person.Homeworks.Add("1324123413");
+            //person.Homeworks.Add("32");
+            //person.Homeworks.Add("5");
 
-            Console.WriteLine(person.PrintGeneric());
+            //Console.WriteLine(person.PrintGeneric());
 
-            var lookupString = "pesho";
+            //var lookupString = "pesho";
 
-            Console.WriteLine(lookupString.IsIn("vanya", "Mariya", "Koce", "Boce", "pesho"));
+            //Console.WriteLine(lookupString.IsIn("vanya", "Mariya", "Koce", "Boce", "pesho"));
+
+            // "npesheva".AppendInFile("../../gosho.txt");
         }
     }
 

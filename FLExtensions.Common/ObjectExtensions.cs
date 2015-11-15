@@ -20,6 +20,16 @@
             return obj;
         }
 
+        public static T ThrowIf<T>(this T obj, Func<T, bool> predicate, Exception e)
+        {
+            if(predicate(obj))
+            {
+                throw e;
+            }
+
+            return obj;
+        }
+
         public static string ToStringGeneric<T>(this T obj, string valueSeparator = ": ", string propSeparator = "; ") where T : class
         {
             var sb = new StringBuilder();
