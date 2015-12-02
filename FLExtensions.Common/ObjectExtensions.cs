@@ -107,5 +107,10 @@
 
             return sb.ToString().Trim();
         }
+
+        public static R Transform<T, R>(this T obj, Func<T, R> transformation)
+        {
+            return transformation(obj);
+        }
     }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLExtensions.Common", "FLEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLExtensions.ConsoleDemos", "FLExtensions.ConsoleDemos\FLExtensions.ConsoleDemos.csproj", "{6B2459FF-1341-4F23-9276-299D9BA5FE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLExtensions.Painkillers", "FLExtensions.Painkillers\FLExtensions.Painkillers.csproj", "{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6B2459FF-1341-4F23-9276-299D9BA5FE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B2459FF-1341-4F23-9276-299D9BA5FE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B2459FF-1341-4F23-9276-299D9BA5FE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,5 +40,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FE2DB87B-C23B-4F05-8E6F-49C102F2A236} = {34C7B078-09D2-4570-9256-ED3EFDF5738A}
 		{6B2459FF-1341-4F23-9276-299D9BA5FE0D} = {C77E04D7-77E0-4F0E-964E-D068E34CAA7A}
+		{91DB7CA5-3441-4C04-9BFD-9121B1B99FA9} = {34C7B078-09D2-4570-9256-ED3EFDF5738A}
 	EndGlobalSection
 EndGlobal

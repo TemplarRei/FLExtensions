@@ -19,7 +19,7 @@
             return squareRoot * squareRoot;
         }
 
-        public static int QuickParse(this string number, int numeralSystem)
+        public static int QuickParse(this string number)
         {
             int result = 0;
             int first = number[0] == '-' ? 1 : 0;

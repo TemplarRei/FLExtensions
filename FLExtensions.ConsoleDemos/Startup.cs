@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
+    using System.Text;
     using FLExtensions.Common;
 
     public class Startup
@@ -44,6 +44,18 @@
             //Console.WriteLine(lookupString.IsIn("vanya", "Mariya", "Koce", "Boce", "pesho"));
 
             // "npesheva".AppendInFile("../../gosho.txt");
+
+            Console.WriteLine("34".Transform(x => int.Parse(x)).Transform(x => 
+            {
+                var result = new StringBuilder();
+
+                Enumerable
+                    .Range(0, 15)
+                    .ForEach(i => result.AppendLine((i ^ x).ToString()));
+
+                return result;
+            }));
+
         }
     }
 
