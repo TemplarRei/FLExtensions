@@ -112,5 +112,11 @@
         {
             return transformation(obj);
         }
+
+        public static T InIffeScope<T>(this T obj, Action<T> iffeAction)
+        {
+            iffeAction(obj);
+            return obj;
+        }
     }
 }
